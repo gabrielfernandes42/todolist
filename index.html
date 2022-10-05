@@ -4,32 +4,41 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="img/favicon.png" />
     <link rel="stylesheet" href="reset.css" />
     <link rel="stylesheet" href="style.css" />
     <title>Todo List</title>
   </head>
   <body>
     <main>
+      <!-- container -->
       <div class="container">
-        <img class="logo-img" src="img/todo.png" alt="" />
-        <div>
-          <input
-            type="text"
-            class="inputBox"
-            id="input"
-            placeholder="New task..."
-          />
-          <button id="button">Add a new task</button>
-          <div class="todo">
-            <div>
-              <p>Estou tentando esse campo</p>
-            </div>
-            <div>
-              <input class="checkbox" type="checkbox" />
-              <img class="trash-can" src="img/trash.png" alt="trash-can" />
-            </div>
+        <form>
+          <img class="logo-img" src="img/todo.png" alt="" />
+          <div>
+            <!-- Textbox (input) -->
+            <input
+              type="text"
+              class="inputBox"
+              id="input"
+              placeholder="New task..."
+            />
+            <span class="message">The field cannot be empty</span>
+            <!-- Button -->
+            <button id="button" type="submit">Add a new task</button>
+            <!-- List of todos -->
+            <div id="listTodos"></div>
+            <ul class="todo">
+              <div>
+                <p class="text-todo">Essa tarefa é fixa</p>
+              </div>
+              <div>
+                <input class="checkbox" type="checkbox" />
+                <img class="trash-can" src="img/trash.png" alt="trash-can" />
+              </div>
+            </ul>
           </div>
-        </div>
+        </form>
       </div>
     </main>
 

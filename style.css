@@ -34,7 +34,7 @@ main {
   margin-top: 0.5rem;
 }
 
-input[type=text] {
+input[type="text"] {
   width: 100%;
   padding: 12px 20px;
   margin: 8px 0;
@@ -63,12 +63,18 @@ button {
   color: white;
 }
 
+.message {
+  color: #e81a1a;
+  font-size: 1rem;
+  display: none;
+}
+
 .todo {
   padding: 0.5rem;
   font-size: 1.5rem;
   border: 1px solid #d8f3fd;
   border-radius: 0.3rem;
-  margin-top: 1.5rem;
+  margin-top: 1rem;
   -webkit-box-shadow: 0px 7px 9px 1px rgba(0, 0, 0, 0.35);
   -moz-box-shadow: 0px 7px 9px 1px rgba(0, 0, 0, 0.35);
   box-shadow: 0px 7px 9px 1px rgba(0, 0, 0, 0.35);
@@ -81,18 +87,21 @@ button {
   color: #363b5b;
 }
 
-.trash-can {
-  cursor: pointer;
-  width: 10%;
+.text-todo {
+  margin-right: auto;
 }
 
-/* .text-todo  {
+.checkbox {
+  margin-right: 0.5rem;
+}
+
+.done {
   text-decoration: line-through;
   text-decoration-color: red;
-} */
+}
 
-.message{
-  color: #e81a1a;
-  font-size: 1rem;
-  display: none;
+.deleteBtn {
+  color: red;
+  font-size: 1.2rem;
+  cursor: pointer;
 }
